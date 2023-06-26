@@ -1,0 +1,13 @@
+<h1>Menu Items</h1>
+<table border="1">
+{% for x in myhome %}
+<tr>
+<td>{{ x.id }}</td>
+<td>{{ x.foodname }}</td>
+<td>{{ x.foodcost }}</td>
+<td>{{ x.foodtype }}</td>
+<td><a href = "delete/{{x.id}}">Delete</a></td>
+<td><a href = "update/{{x.id}}">Update</a></td>
+</tr>
+{% endfor %}
+</table>

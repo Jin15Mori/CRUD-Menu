@@ -1,0 +1,14 @@
+<h1>Update home</h1>
+<form action = "updaterecord/{{myhome.id}}" method = "post">
+    {% csrf_token %}
+    Food Name:<br>
+    <input name = "foodname" value = "{{myhome.foodname}}">
+    <br><br>
+    Food Cost:<br>
+    <input name = "foodcost" value = "{{myhome.foodcost}}">
+    <br><br>
+    Food Type:<br>
+    <input name = "foodtype" value = "{{myhome.foodtype}}">
+    <br><br>
+    <input type = "submit" value = "Submit">
+</form>
